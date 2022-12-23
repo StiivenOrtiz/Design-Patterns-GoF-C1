@@ -30,5 +30,8 @@ public class Main {
         // Verificamos que no estamos haciendo uso otro espacio de memoria.
         System.out.println("\nNombre: " + datosPersonales2.getNombre() + "\nApellido1: " + datosPersonales2.getApellido1() + "\nApellido2: " + datosPersonales2.getApellido2());
 
+        datosPersonales2.setApellido2("@st1ven11");
+
+        System.out.println("\nNombre: " + datosPersonales1.getNombre() + "\nApellido1: " + datosPersonales1.getApellido1() + "\nApellido2: " + datosPersonales1.getApellido2());
     }
 }
