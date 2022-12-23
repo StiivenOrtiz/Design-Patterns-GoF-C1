@@ -7,21 +7,11 @@ public class Triangulo implements Forma{
         return a+b+c;
     }
 
-    public Triangulo(int a, int b, int c){
-        this.a = a;
-        this.b = b;
-        this.c = c;
-    }
-
-    public void setB(double b) {
-        this.b = b;
-    }
-
-    public void setA(double a) {
-        this.a = a;
-    }
-
-    public void setC(double c) {
-        this.c = c;
+    @Override
+    public void meterDatos(String datos) {
+        String[] parts = datos.split(",");
+        this.a = Double.parseDouble(parts[0]);
+        this.b = Double.parseDouble(parts[1]);
+        this.c = Double.parseDouble(parts[2]);
     }
 }

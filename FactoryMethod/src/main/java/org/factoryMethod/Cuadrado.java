@@ -7,16 +7,11 @@ public class Cuadrado implements Forma{
         return (a*2) + (b*2);
     }
 
-    public Cuadrado(int a, int b){
-        this.a = a;
-        this.b = b;
-    }
-
-    public void setA(double a) {
-        this.a = a;
-    }
-
-    public void setB(double b) {
-        this.b = b;
+    @Override
+    public void meterDatos(String datos) {
+        String[] parts = datos.split(",");
+        this.a = Double.parseDouble(parts[0]);
+        this.b = Double.parseDouble(parts[1]);
     }
 }
+
